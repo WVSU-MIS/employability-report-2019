@@ -68,7 +68,7 @@ def twowayPlot(df, var1, var2):
 
 # Define the Streamlit app
 def app():
-    st.title("Welcome to the WVSU Employability Report 2017")      
+    st.title("Welcome to the WVSU Employability Report 2019")      
     st.subheader("(c) 2023 WVSU Management Information System")
                  
     st.write("This dashboard is managed by: Dr. Wilhelm P. Cerbo \nDirector, University Planning Office, updo@wvsu.edu.ph")
