@@ -102,10 +102,6 @@ def app():
     if st.button('Distribution By Campus'):
         df = filterBy(df, campus)  
         createPlots(df, 'Campus')
-
-    if st.button('Distribution By Age Bracket'):
-        df = filterBy(df, campus)  
-        createPlots(df, 'Age Bracket')
         
     if st.button('Distribution By Employment Status'):
         df = filterBy(df, campus)  
