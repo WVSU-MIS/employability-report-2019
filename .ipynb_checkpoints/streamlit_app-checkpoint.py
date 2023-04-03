@@ -26,10 +26,10 @@ def createPlots(df, columnName):
     scounts=df[columnName].value_counts()
     labels = list(scounts.index)
     sizes = list(scounts.values)
-    custom_colours = ['#ff7675', '#74b9ff']
+    custom_colors = ['tomato', 'cornflowerblue', 'gold', 'orchid', 'green']
     fig = plt.figure(figsize=(12, 4))
     plt.subplot(1, 2, 1)
-    plt.pie(sizes, labels = labels, textprops={'fontsize': 10}, startangle=140, autopct='%1.0f%%', palette= 'viridis')
+    plt.pie(sizes, labels = labels, textprops={'fontsize': 10}, startangle=140, autopct='%1.0f%%', colors = custom_colors)
     plt.subplot(1, 2, 2)
     sns.barplot(x = scounts.index, y = scounts.values, palette= 'viridis')
     st.pyplot(fig)
