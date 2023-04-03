@@ -17,7 +17,7 @@ def filterBy(df, campus):
         return filtered_df
 
 def loadcsvfile(campus):
-    csvfile = 'employability-2017.csv'
+    csvfile = 'Employability-2017.csv'
     df = pd.read_csv(csvfile, dtype='str', header=0, sep = ",", encoding='latin') 
     return df
 
@@ -78,7 +78,7 @@ def app():
     #create a dataframe
     df = pd.DataFrame()
     
-    st.subheader("Employee Demographics")
+    st.subheader("Graduate Employability")
     campus = 'Main'
     options = ['All', 'Main Campus', 'CAF Campus', 'Calinog Campus', 'Janiuay Campus', 'Lambunao Campus', 'Pototan Campus']
     
